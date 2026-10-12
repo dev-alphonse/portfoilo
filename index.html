@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="modern.css">
 </head>
 <body>
 <div class="bar" id="bar"></div>
@@ -20,7 +20,7 @@
     <nav>
       <a href="index.html" aria-current="page">Home</a>
       <a href="work.html">Work</a>
-      <a href="building.html">Building</a>
+      <a href="building.html">Projects</a>
       <a href="background.html">Background</a>
       <a href="contact.html">Contact</a>
       <button class="theme" id="theme" type="button" aria-label="Switch between light and dark">Dark</button>
@@ -30,22 +30,21 @@
   <main>
     <div class="hero">
       <div class="hero-text">
-        <p class="eyebrow">Nigeria &middot; grants, partnerships, programmes</p>
-        <h1>I help good organisations get the <em><span class="swap" id="swap" data-words="support|funding|partners|volunteers|attention">support</span></em> they need to keep going.</h1>
+        <p class="eyebrow">Nigeria &middot; Social Justice, partnerships, programmes</p>
+        <h1>I help good organisations get the <em><span class="swap" id="swap" data-words="support|results|partners|goals|attention">support</span></em> they need to keep going.</h1>
         <p class="lede">
-          I'm Alphonse, a philosophy graduate who ended up in the less glamorous side of
-          social impact: grants, partnerships, trackers, follow-up emails and the slow work
-          of making sure promising ideas actually get funded and finished.
+          Alphonse is a Philosophy graduate building a career in grants management, strategic partnerships and resource mobilisation for social impact.
+          He focuses on strengthening organisational systems, coordinating partnerships and supporting the processes that turn ideas into effective programmes.
+          His goal is to contribute to sustainable development by helping mission-driven organisations create meaningful, measurable and lasting impact.
         </p>
       </div>
       <figure class="portrait reveal">
         <!-- Put Alphonse's photo at images/alphonse.jpg. Until then the illustration shows. -->
-        <img src="images/alphonse.jpg" data-fallback="images/portrait.svg"
+        <img src="images/alphonse.jpeg" data-fallback="images/portrait.svg"
              onerror="this.onerror=null;this.src=this.dataset.fallback"
-             width="600" height="800" alt="Portrait of Alphonse Ucheokeke">
+             width="1000" height="550" alt="Portrait of Alphonse Ucheokeke">
       </figure>
     </div>
-
     <div class="marquee" aria-hidden="true">
       <div class="marquee-track">
         <div class="grp"><span>Grants</span><span>Partnerships</span><span>Resource mobilisation</span><span>Volunteer strategy</span><span>Programme coordination</span><span>Philosophy</span><span>Product thinking</span></div>
@@ -71,11 +70,11 @@
       <h2>Have a look around</h2>
       <div class="cards">
         <a class="card reveal" href="work.html">
-          <div class="pic"><img src="images/card-work.svg" alt="" width="800" height="500"></div>
+          <div class="pic"><img src="images/me in a group.png" alt="" width="800" height="500"></div>
           <div class="body"><div class="t">Work <i>&rarr;</i></div><div class="d">Where I've been and what I did there</div></div>
         </a>
         <a class="card reveal" style="--d:.08s" href="building.html">
-          <div class="pic"><img src="images/card-building.svg" alt="" width="800" height="500"></div>
+          <div class="pic"><img src="images/project.png" alt="" width="800" height="500"></div>
           <div class="body"><div class="t">Building <i>&rarr;</i></div><div class="d">Ideas I'm turning into real things</div></div>
         </a>
         <a class="card reveal" style="--d:.16s" href="background.html">
@@ -98,5 +97,6 @@
 
 </div>
 <script src="main.js"></script>
+<script src="buttons.js"></script>
 </body>
 </html>
