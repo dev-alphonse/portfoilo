@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact · Alphonse Ucheokeke</title>
+<meta name="description" content="Get in touch with Alphonse Ucheokeke.">
+<script>(function(){var r=document.documentElement;r.classList.add("js");try{var t=localStorage.getItem("theme");if(t)r.setAttribute("data-theme",t)}catch(e){}})();</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="bar" id="bar"></div>
+<div class="page">
+
+  <header>
+    <a class="name" href="index.html">Alphonse Ucheokeke</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="work.html">Work</a>
+      <a href="building.html">Building</a>
+      <a href="background.html">Background</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+      <button class="theme" id="theme" type="button" aria-label="Switch between light and dark">Dark</button>
+    </nav>
+  </header>
+
+  <main>
+    <p class="eyebrow">Contact</p>
+    <h1>Say <em>hello</em>.</h1>
+    <p class="lede">
+      I'm happy to talk about partnerships, programmes or ideas worth building.
+      Write a few lines below and your email app will open with the message ready to send.
+    </p>
+
+    <figure class="banner reveal"><img src="images/card-contact.svg" alt="" width="800" height="500"></figure>
+
+    <form id="mailform" class="reveal">
+      <div class="field">
+        <label for="f-name">Your name</label>
+        <input id="f-name" name="name" type="text" autocomplete="name" required>
+      </div>
+      <div class="field">
+        <label for="f-email">Your email</label>
+        <input id="f-email" name="email" type="email" autocomplete="email">
+      </div>
+      <div class="field">
+        <label for="f-msg">Message</label>
+        <textarea id="f-msg" name="message" required></textarea>
+      </div>
+      <button class="btn primary" type="submit">Write to Alphonse</button>
+    </form>
+
+    <div class="direct reveal">
+      <p>
+        Or just write directly:
+        <a class="js-email" href="mailto:hello@example.com">hello@example.com</a>
+        <button class="copy" id="copy" type="button">Copy</button>
+      </p>
+      <p><a class="js-linkedin" href="https://www.linkedin.com/in/your-handle">LinkedIn</a></p>
+    </div>
+  </main>
+
+  <div class="pager">
+    <a href="background.html">Previous<b>&larr; Background</b></a>
+    <a class="next" href="index.html">Back to<b>Home &rarr;</b></a>
+  </div>
+
+  <footer>&copy; <span id="year">2026</span> Alphonse Ucheokeke</footer>
+
+</div>
+<script src="main.js"></script>
+</body>
+</html>

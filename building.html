@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Building · Alphonse Ucheokeke</title>
+<meta name="description" content="Things Alphonse is working on: OpportunityOS, a short guide for parents and a team shuffler.">
+<script>(function(){var r=document.documentElement;r.classList.add("js");try{var t=localStorage.getItem("theme");if(t)r.setAttribute("data-theme",t)}catch(e){}})();</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="bar" id="bar"></div>
+<div class="page">
+
+  <header>
+    <a class="name" href="index.html">Alphonse Ucheokeke</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="work.html">Work</a>
+      <a href="building.html" aria-current="page">Building</a>
+      <a href="background.html">Background</a>
+      <a href="contact.html">Contact</a>
+      <button class="theme" id="theme" type="button" aria-label="Switch between light and dark">Dark</button>
+    </nav>
+  </header>
+
+  <main>
+    <p class="eyebrow">Building</p>
+    <h1>Ideas I'm trying to turn into <em>real things</em>.</h1>
+    <p class="lede">
+      Some of these are further along than others. I'd rather show them honestly,
+      half-finished, than pretend they're polished.
+    </p>
+
+    <figure class="banner reveal"><img src="images/card-building.svg" alt="" width="800" height="500"></figure>
+
+    <section>
+      <h2>OpportunityOS</h2>
+      <p class="reveal">
+        A place for Nigerian students and recent graduates to find fellowships, scholarships,
+        internships and training without digging through twelve WhatsApp groups. I'm still
+        talking to people about how they hunt for opportunities today, because I would rather
+        solve a real problem than a guessed one. Below is a rough feel for the idea.
+      </p>
+      <div class="tool reveal">
+        <input type="search" id="opp-search" placeholder="Search opportunities" aria-label="Search opportunities">
+        <div class="chips" style="margin:1rem 0 0" role="group" aria-label="Type">
+          <button class="chip" type="button" data-kind="All" aria-pressed="true">All</button>
+          <button class="chip" type="button" data-kind="Fellowship" aria-pressed="false">Fellowships</button>
+          <button class="chip" type="button" data-kind="Scholarship" aria-pressed="false">Scholarships</button>
+          <button class="chip" type="button" data-kind="Internship" aria-pressed="false">Internships</button>
+          <button class="chip" type="button" data-kind="Training" aria-pressed="false">Training</button>
+        </div>
+        <div class="opps" id="opps" aria-live="polite"></div>
+        <p class="note" style="margin:1rem 0 0"><span id="opp-count"></span> &middot; Made-up sample listings for illustration. Not live data.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>A short book</h2>
+      <div class="book reveal">
+        <img src="images/book.svg" alt="Cover of the book How to Talk to Your Girl About Your Period Before It Starts" width="300" height="420">
+        <div>
+          <p>
+            <em>How to Talk to Your Girl About Your Period Before It Starts.</em> A plain,
+            practical guide for parents who know they should have the conversation and
+            don't know how to begin. Still in draft.
+          </p>
+          <a class="btn js-mailto" data-subject="Tell me when the book is ready" href="mailto:hello@example.com?subject=Tell%20me%20when%20the%20book%20is%20ready">Tell me when it's ready</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>A small experiment</h2>
+      <p class="reveal">
+        I was thinking about a sports app where nobody is stuck on a permanent team. People
+        turn up, the numbers change from day to day, and the teams are drawn fresh each time.
+        Here's the idea in its simplest form. Put in some names and shuffle.
+      </p>
+      <div class="tool reveal">
+        <textarea id="names" aria-label="Player names, one per line">Chidi
+Amaka
+Tunde
+Ife
+Musa
+Ngozi
+Emeka
+Bola
+Sade</textarea>
+        <button class="btn primary" id="shuffle" type="button">Shuffle teams</button>
+        <div class="teams" id="teams" aria-live="polite"></div>
+      </div>
+    </section>
+  </main>
+
+  <div class="pager">
+    <a href="work.html">Previous<b>&larr; Work</b></a>
+    <a class="next" href="background.html">Next<b>Background &rarr;</b></a>
+  </div>
+
+  <footer>&copy; <span id="year">2026</span> Alphonse Ucheokeke</footer>
+
+</div>
+<script src="main.js"></script>
+</body>
+</html>
